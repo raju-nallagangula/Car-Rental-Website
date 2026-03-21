@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "b8ae",
+      "name": "raju",
+      "email": "rajunallagangula26@gmail.com",
+      "password": "Asdfghjhg@1234"
+    },
+    {
+      "id": "a815",
+      "name": "tej",
+      "email": "tej@gmail.com",
+      "password": "Tej@12345"
+    },
+    {
+      "id": "c645",
+      "name": "ravi",
+      "email": "ravi@gmail.com",
+      "password": "Ravi@1234"
+    },
+    {
+      "id": "7c24",
+      "name": "raju",
+      "email": "mariyaraju123raju@gmail.com",
+      "password": "Sdfghjkjcx@123456"
+    }
+  ]
+}
