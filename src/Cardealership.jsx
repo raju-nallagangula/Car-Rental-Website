@@ -1,22 +1,10 @@
 import React from "react";
 import { useState, useEffect } from "react"
-import img1 from './assets/images/andrew.jpg'
-import img10 from './assets/images/ferr.jpg'
-import img21 from './assets/images/hors.jpg'
-
-import img01 from './assets/images/mercedes.jpeg'
-import img2 from './assets/images/lamborghini.jpeg'
-import img3 from './assets/images/ferrari.jpeg'
-import img4 from './assets/images/copper.jpeg'
-import img5 from './assets/images/rolls royce.webp'
-import img6 from './assets/images/defender.jpeg'
-import img7 from './assets/images/audi.webp'
-import img8 from './assets/images/bmw.jpeg'
 
 const Cardealership = () => {
   let [users, setUsers] = useState([
     {
-      img: img1,
+      img: "/images/andrew.jpg",
       heading: "Mercedes-Benz AMG SL",
       para0: "price : Rs. 7.50 Cr On-Road Price",
       para1: "Engine : 5204cc",
@@ -25,7 +13,7 @@ const Cardealership = () => {
       para4: "Automatic",
     },
     {
-      img: img2,
+      img: "/images/lamborghini.jpeg",
       heading: "Lamborghini Huracan",
       para0: "price : Rs. 7.50 Cr On-Road Price",
       para1: "Engine : 3982cc",
@@ -34,7 +22,7 @@ const Cardealership = () => {
       para4: "Automatic",
     },
     {
-      img: img3,
+      img: "/images/ferrari.jpeg",
       heading: "Ferrari 812 Superfast",
       para0: "price : Rs. 7.50 Cr On-Road Price",
       para1: "Engine : 6496cc",
@@ -43,7 +31,7 @@ const Cardealership = () => {
       para4: "Automatic",
     },
     {
-      img: img4,
+      img: "/images/copper.jpeg",
       heading: "Mini Cooper 3 DOOR",
       para0: "price : Rs. 7.50 Cr On-Road Price",
       para1: "Engine : 1998cc",
@@ -52,7 +40,7 @@ const Cardealership = () => {
       para4: "Automatic",
     },
     {
-      img: img5,
+      img: "/images/rolls royce.webp",
       heading: "Rolls-Royce Spectre",
       para0: "price : Rs. 7.50 Cr On-Road Price",
       para1: "Engine : 1998cc",
@@ -61,7 +49,7 @@ const Cardealership = () => {
       para4: "Automatic",
     },
     {
-      img: img6,
+      img: "/images/defender.jpeg",
       heading: "Land Rover Defender",
       para0: "price : Rs.2.79 Cr On-Road Price",
       para1: "Engine : 5000cc",
@@ -70,7 +58,7 @@ const Cardealership = () => {
       para4: "Automatic",
     },
     {
-      img: img7,
+      img: "/images/audi.webp",
       heading: "Audi RS e-tron GT",
       para0: "price : Rs. 7.50 Cr On-Road Price",
       para1: "Engine : 3982cc",
@@ -79,7 +67,7 @@ const Cardealership = () => {
       para4: "Automatic",
     },
     {
-      img: img8,
+      img: "/images/bmw.jpeg",
       heading: "BMW 2 Series Gran Coupe",
       para0: "Rs.48.90 Lakh On-Road Price",
       para1: "Engine : 3982cc",
@@ -91,7 +79,11 @@ const Cardealership = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const images = [img01, img10, img21]
+  const images = [
+    "/images/ferrari.jpeg",
+    "/images/ferrari2.jpeg",
+    "/images/ferr.jpg"
+  ];
 
   useEffect(() => {
     const interval = setInterval(() => {

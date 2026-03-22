@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import img from "./assets/images/spots.jpg";
+
 
 
 function Home() {
@@ -34,7 +34,7 @@ function Home() {
           <div className="row mt-4">
           <div className="col-md-8">
            <div className="img1  mt-2">
-            <img src={img} className="img" onClick={transferData} />
+            <img src="/images/spots.jpg" className="img" onClick={transferData} />
             
             </div>
             <h1 className="over"><strong style={{color:"red"}}>M</strong>OTORS</h1>

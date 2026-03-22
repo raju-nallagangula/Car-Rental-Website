@@ -1,10 +1,7 @@
 import React,{ useState } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
-import img1 from './assets/images/fixed5.jpeg'
-import img2 from './assets/images/fixed.jpeg'
-import img3 from './assets/images/fixed2.jpeg';
-import img22 from './assets/images/details.webp'
-import img23 from './assets/images/listing.avif'
+
+
 
 import { Link } from "react-router-dom"
 import { useRef } from "react";
@@ -172,7 +169,7 @@ function Service() {
                                     <div className="row mt-5 ">
                                         <div className="col-md-4 move">
                                             <div className="skew-card relative" onClick={goToDealership}>
-                                                <img src={img1} alt="CAR DEALERSHIP" className="skew-img" />
+                                                <img src="/images/fixed5.jpeg"alt="CAR DEALERSHIP" className="skew-img" />
                                                 <div className="overlay bg-blue-900/50 ">
 
                                                 </div>
@@ -181,7 +178,7 @@ function Service() {
                                         </div>
                                         <div className="col-md-4 move">
                                             <div className="skew-card relative " onClick={goToRental}>
-                                                <img src={img2}  alt="AUTO RENTAL SERVICE" className="skew-img" />
+                                                <img src="/images/fixed.jpeg"  alt="AUTO RENTAL SERVICE" className="skew-img" />
                                                 <div className="overlay bg-red-600/60"></div>
 
                                             </div>
@@ -189,7 +186,7 @@ function Service() {
                                         </div>
                                         <div className="col-md-4 move">
                                             <div className="skew-card relative" onClick={goToClassified}>
-                                                <img src={img3} alt="Classified Listing" className="skew-img" />
+                                                <img src="/images/fixed2.jpeg" alt="Classified Listing" className="skew-img" />
                                                 <div className="overlay bg-black/40"></div>
 
                                             </div>
@@ -271,14 +268,14 @@ function Service() {
                         </div>
                     </div>
                     <div className="col-md-5 pic22">
-                        <img src={img22} width={550} />
+                        <img src="/images/details.webp" width={550} />
                     </div>
                 </div>
             </section>
             <section className="parallax top">
                 <div className="row container ms-3">
                     <div className="col-md-5 ps-4 pic22">
-                        <img src={img23} width={500} />
+                        <img src="/images/listing.avif" width={500} />
                     </div>
                     <div className="col-md-7 ">
                         <h2 className="single "><strong style={{ color: 'red' }}>CUSTOMIZABLE</strong><br></br>SINGLE VEHICLE LISTING</h2>

@@ -7,7 +7,7 @@ import img21 from './assets/images/hors.jpg'
 const Element =() =>{
  const[currentIndex, setCurrentIndex] = useState(0);
 
-    const images = [img1, img10, img21]
+    const images = ["/images/andrew.jpg", "/images/ferr.jpg", "/images/hors.jpg"]
 
     useEffect(() => {
         const interval = setInterval(() =>{

@@ -1,5 +1,5 @@
 .parallax {
-  background-image:linear-gradient(rgba(0,0,0,0.6), rgba(18, 17, 17, 0.6)), url("./assets/Images/bmw.jpeg");
+  background-image:linear-gradient(rgba(0,0,0,0.6), rgba(18, 17, 17, 0.6)), url("/images/bmw.jpeg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -634,12 +634,13 @@ img:hover{
 }
 .head2{
    position: absolute;
-   top: 50px;
+   top: 120px;
    left: 30px;
+   
 }
 .head3{
   position: absolute;
-  top: 50px;
+  top: 120px;
   left: 280px;
   justify-content: center;
   display: flex;
@@ -649,7 +650,7 @@ img:hover{
 }
 .head4{
   position: absolute;
-  top: 50px;
+  top: 120px;
   left: 1000px;
   display: flex;
   font-size: 18px;

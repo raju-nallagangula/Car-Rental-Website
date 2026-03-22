@@ -1,8 +1,5 @@
 import React, { useState, useRef } from "react";
-import img5 from './assets/images/built0.avif'
-import img11 from './assets/images/built33.avif'
-import img12 from './assets/images/built32.avif'
-import img15 from './assets/images/built43.avif'
+
 import { useLocation } from "react-router-dom";
 
 const Classified =()=> {
@@ -25,21 +22,21 @@ const Classified =()=> {
         <div ref={classifiedRef}> 
             <div className="row container ms-4 mt-3">
                 <div className="col-md-4 move">
-                    <img src={img5} alt="Built Websites" width={300} onClick={trans1} className="radius"/>
+                    <img src="/images/built0.avif" alt="Built Websites" width={300} onClick={trans1} className="radius"/>
                     <p className="one">CLASSIFIED LISTING</p>
                 </div>
                 <div className="col-md-4 move">
-                    <img src={img11} alt="Built Websites" width={300} onClick={trans} className="radius"/>
+                    <img src="/images/built33.avif" alt="Built Websites" width={300} onClick={trans} className="radius"/>
                     <p className="one">CLASSIFIED LISTING THREE</p>
                 </div>
                 <div className="col-md-4 move">
-                    <img src={img12} alt="Built Websites" width={300} onClick={trans1} className="radius"/>
+                    <img src="/images/built32.avif" alt="Built Websites" width={300} onClick={trans1} className="radius"/>
                     <p className="one">CLASSIFIED LISTING FOUR</p>
                 </div>
             </div>
             <div className="row container ms-5 pt-4 mt-4">
                 <div className="col-md-4 move">
-                    <img src={img15} alt="Built Websites" width={300} onClick={trans} className="radius"/>
+                    <img src="/images/built43.avif" alt="Built Websites" width={300} onClick={trans} className="radius"/>
                     <p className="one">CLASSIFIED LISTING TWO</p>
                 </div>
 
