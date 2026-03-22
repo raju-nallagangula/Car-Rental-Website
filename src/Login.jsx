@@ -43,32 +43,47 @@ function Login() {
 
     try {
       if (isRegister) {
-        // 🔹 REGISTER
+        // Check if user already exists
+        const checkUser = await fetch(
+          `http://localhost:3000/users?email=${user.email}`
+        );
+        const existing = await checkUser.json();
+      
+        if (existing.length > 0) {
+          setError("User already exists");
+          return;
+        }
+      
         const res = await fetch("http://localhost:3000/users", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(user),
         });
-
+      
         if (!res.ok) throw new Error("Registration failed");
-
-        setSuccess("Registration successful 🎉");
-        navigate("/Service");
-        setUser({ name: "", email: "", password: "" });
+      
+        setSuccess("Registration successful 🎉 Please login");
+        setIsRegister(false); // switch to login instead of redirect
+      
       } else {
-        // 🔹 LOGIN
         const res = await fetch(
-          `http://localhost:3000/users?email=${user.email}&password=${user.password}`
+          `http://localhost:3000/users?email=${user.email}`
         );
         const data = await res.json();
-
-        if (data.length === 0) {
-          setError("Invalid email or password");
+      
+        if (!data || data.length === 0) {
+          setError("User not found");
           return;
         }
-
+      
+        // check password manually
+        if (data[0].password !== user.password) {
+          setError("Wrong password");
+          return;
+        }
+      
         setSuccess("Login successful ✅");
-        navigate("/Service"); // redirect after login
+        navigate("/Service");
       }
     } catch (err) {
       setError("Something went wrong. Try again.");

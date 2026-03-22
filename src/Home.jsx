@@ -7,7 +7,7 @@ function Home() {
   const navigate = useNavigate();
 
   const transferData = () => {
-    navigate("/Login");
+    navigate("/Service");
   };
  
    
